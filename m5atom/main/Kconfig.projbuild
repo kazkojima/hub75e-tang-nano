@@ -1,0 +1,27 @@
+menu "M5ATOM RGB565-HUB75E"
+
+config WIFI_SSID
+    string "WIFI access point name (SSID)"
+    default "ssidofAP"
+    help
+        Enter the name of the WIFI access point
+
+config WIFI_PASSWORD
+    string "WIFI password"
+    default "w1f1p@$$wOrd"
+    help
+        Enter ssid password
+
+config WIFI_MAXIMUM_RETRY
+    int "WiFi max retry"
+    default 5
+    help
+	WiFi max retry count
+
+config UDP_PORT
+    int "UDP port"
+    default 6454
+    help
+        TCP port used for command
+
+endmenu

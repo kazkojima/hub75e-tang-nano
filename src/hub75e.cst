@@ -1,0 +1,51 @@
+//Copyright (C)2014-2020 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: V1.9.6Beta
+//Part Number: GW1N-LV1QN48C6/I5
+//Created Time: Wed 07 08 10:53:07 2020
+
+IO_LOC "hub_OE" 13;
+IO_PORT "hub_OE" IO_TYPE=LVCMOS33;
+IO_LOC "hub_ST" 5;
+IO_PORT "hub_ST" IO_TYPE=LVCMOS33;
+IO_LOC "hub_CK" 46;
+IO_PORT "hub_CK" IO_TYPE=LVCMOS33;
+IO_LOC "hub_D" 10;
+IO_PORT "hub_D" IO_TYPE=LVCMOS33;
+IO_LOC "hub_C" 11;
+IO_PORT "hub_C" IO_TYPE=LVCMOS33;
+IO_LOC "hub_B" 45;
+IO_PORT "hub_B" IO_TYPE=LVCMOS33;
+IO_LOC "hub_A" 44;
+IO_PORT "hub_A" IO_TYPE=LVCMOS33;
+IO_LOC "hub_E" 43;
+IO_PORT "hub_E" IO_TYPE=LVCMOS33;
+IO_LOC "hub_B2" 42;
+IO_PORT "hub_B2" IO_TYPE=LVCMOS33;
+IO_LOC "hub_G2" 41;
+IO_PORT "hub_G2" IO_TYPE=LVCMOS33;
+IO_LOC "hub_R2" 40;
+IO_PORT "hub_R2" IO_TYPE=LVCMOS33;
+IO_LOC "hub_B1" 39;
+IO_PORT "hub_B1" IO_TYPE=LVCMOS33;
+IO_LOC "hub_G1" 38;
+IO_PORT "hub_G1" IO_TYPE=LVCMOS33;
+IO_LOC "hub_R1" 27;
+IO_PORT "hub_R1" IO_TYPE=LVCMOS33;
+IO_LOC "led_b" 17;
+IO_PORT "led_b" IO_TYPE=LVCMOS33;
+IO_LOC "led_g" 16;
+IO_PORT "led_g" IO_TYPE=LVCMOS33;
+IO_LOC "led_r" 18;
+IO_PORT "led_r" IO_TYPE=LVCMOS33;
+IO_LOC "spi_cs" 21;
+IO_PORT "spi_cs" IO_TYPE=LVCMOS33;
+IO_LOC "spi_mosi" 24;
+IO_PORT "spi_mosi" IO_TYPE=LVCMOS33;
+IO_LOC "spi_clk" 22;
+IO_PORT "spi_clk" IO_TYPE=LVCMOS33;
+IO_LOC "CLK_IN" 35;
+IO_PORT "CLK_IN" IO_TYPE=LVCMOS33;
+IO_LOC "USER_KEY" 15;
+IO_PORT "USER_KEY" IO_TYPE=LVCMOS33;
