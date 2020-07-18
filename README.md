@@ -28,3 +28,5 @@ SCLK is limited by 4Mhz for the 16Mhz base clock.
 
 All sources are covered by ISC License, except src/hub75e.{sdc,cst} files
 which are generated files by GOWIN IDE.
+
+![simple schematic](https://github.com/kazkojima/hub75e-tang-nano/blob/master/other/hub75e-nano.png)
