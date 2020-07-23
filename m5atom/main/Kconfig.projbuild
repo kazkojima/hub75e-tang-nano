@@ -1,5 +1,16 @@
 menu "M5ATOM RGB565-HUB75E"
 
+choice
+    prompt "M5ATOM type"
+
+config ATOM_MATRIX
+    bool "ATOM Matrix"
+
+config ATOM_LITE
+    bool "ATOM Lite"
+
+endchoice
+
 config WIFI_SSID
     string "WIFI access point name (SSID)"
     default "ssidofAP"

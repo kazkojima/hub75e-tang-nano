@@ -4,8 +4,6 @@
 #include <cstring>
 #include <cstdlib>
 
-#include "neopixel.h"
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/queue.h"
@@ -19,6 +17,8 @@
 #include "driver/spi_master.h"
 #include "driver/gpio.h"
 #include "sdkconfig.h"
+
+#include "neopixel.h"
 
 #include "lwip/err.h"
 #include "lwip/sockets.h"
@@ -190,7 +190,11 @@ esp_err_t _I2CWrite1(uint8_t addr, uint8_t reg, uint8_t val)
 
 // NEOPIXEL
 #define NEOPIXEL_PORT					GPIO_NUM_27
-#define NR_LED							GPIO_NUM_25
+#if CONFIG_ATOM_MATRIX
+#define NR_LED							25
+#elif CONFIG_ATOM_LITE
+#define NR_LED							1
+#endif
 #define NEOPIXEL_RMT_CHANNEL            RMT_CHANNEL_0
 
 void led_task(void *arg)
@@ -222,9 +226,9 @@ void led_task(void *arg)
     px.timings.reset.duration0 = 600;
     px.timings.reset.duration1 = 600;
 
-    px.brightness = 0x10;
+    px.brightness = 0x08;
     np_show(&px, NEOPIXEL_RMT_CHANNEL);
-    
+
     int fact = 1;
     while (true) {
         vTaskDelay(10 / portTICK_PERIOD_MS);
